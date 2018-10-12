@@ -1,0 +1,36 @@
+{
+  "name": "dbl-helix",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000d\u0000b\u0000l\u0000-\u0000h\u0000e\u0000l\u0000i\u0000x\u0000\r\u0000 \u0000",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDykeman/dbl-helix.git"
+  },
+  "keywords": [
+    "Double",
+    "Helix"
+  ],
+  "author": "Matthew Dykeman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MDykeman/dbl-helix/issues"
+  },
+  "homepage": "https://github.com/MDykeman/dbl-helix#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
