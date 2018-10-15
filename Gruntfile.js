@@ -8,10 +8,21 @@ module.exports = function (grunt) {
                 }
             }
         },
+        postcss: {
+            options: {
+                map: true, 
+                processors: [
+                    require('autoprefixer')({browsers: ['last 1 version']})
+                ]
+            },
+            dist: {
+                src: 'src/css/styles.css'
+            }
+        },
         watch: {
             css: {
                 files: ['src/sass/*.scss'],
-                tasks: ['sass'],
+                tasks: ['sass', 'postcss:dist'],
                 options: {
                     livereload: true,
                 }
@@ -19,8 +30,9 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['watch', 'sass']);
+    grunt.registerTask('default', ['watch', 'sass', 'postcss:dist']);
 
 };
