@@ -19,7 +19,9 @@
 
     <div class="container d-flex h-100">
         <div class="row align-self-center">
-            <div class="content">
+            <div class="app-wrapper">
+
+                <h1>Double Helix DNA Model</h1>
                 <ul class="nav nav-tabs w-100" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="intro-tab" data-toggle="tab" href="#intro" role="tab"
@@ -36,6 +38,9 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="home-tab">
+
+                        <img class="img-fluid" src="src\assets\double-helix.png" alt="Double Helix Graphic">
+
                         <p>The DNA double helix model was relatively simple and has revolutionized the study of biology
                             and
                             genetics. In order for the double helix model to explain the known facts about DNA, the
@@ -123,10 +128,25 @@
                         </ol>
                     </div>
                 </div>
+
             </div>
             <!--tab content-->
         </div>
         <!--end of row-->
+    </div>
+
+    <div class="modal hide fade" id="welcomeModal">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Modal header</h3>
+        </div>
+        <div class="modal-body">
+            <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -135,6 +155,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>

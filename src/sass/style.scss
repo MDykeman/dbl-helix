@@ -1,6 +1,18 @@
 $highlight-colour: purple;
 
 
+.app-wrapper {
+    margin: 2rem .5rem;
+    border: solid 1px #dee2e6;
+
+    border-radius: .25rem;
+
+    .tab-content {
+        padding: 2rem;
+    }
+}
+
+
 a {
     color: $highlight-colour;
 }
