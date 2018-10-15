@@ -5,7 +5,18 @@
   .app-wrapper .tab-content {
     padding: 2rem; }
 
-a {
-  color: purple; }
+.modal-content .modal-header {
+  justify-content: center;
+  border-bottom: 0; }
+.modal-content .modal-body {
+  text-align: center; }
+.modal-content .modal-footer {
+  justify-content: center;
+  border-top: 0; }
+
+.modal-backdrop {
+  background-color: #fff; }
+  .modal-backdrop.show {
+    opacity: .95; }
 
 /*# sourceMappingURL=styles.css.map */
