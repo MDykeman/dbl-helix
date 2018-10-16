@@ -2,7 +2,7 @@
   font-size: 18px; }
 
 body {
-  background-image: url("/src/assets/bg-pattern.svg"); }
+  background-image: url("../../src/assets/bg-pattern.svg"); }
 
 .app-wrapper {
   background: #fff;
