@@ -10,13 +10,29 @@ module.exports = function (grunt) {
         },
         postcss: {
             options: {
-                map: true, 
+                map: true,
                 processors: [
-                    require('autoprefixer')({browsers: ['last 1 version']})
+                    require('autoprefixer')({
+                        browsers: ['last 1 version']
+                    })
                 ]
             },
             dist: {
                 src: 'src/css/styles.css'
+            }
+        },
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src: [
+                        'src/sass/style.scss',
+                        'index.html'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    server: './'
+                }
             }
         },
         watch: {
@@ -30,9 +46,12 @@ module.exports = function (grunt) {
         }
     });
 
+
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['watch', 'sass', 'postcss:dist']);
+
+    grunt.registerTask('default', ['watch', 'browserSync']);
 
 };

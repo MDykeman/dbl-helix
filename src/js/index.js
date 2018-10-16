@@ -1,3 +1,3 @@
-$(window).on('load', function () {
-    $('#welcomeModal').modal('show');
-});
+ $(window).on('load', function () {
+     $('#welcomeModal').modal('show');
+ });

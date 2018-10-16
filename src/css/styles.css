@@ -1,9 +1,58 @@
+:root {
+  font-size: 18px; }
+
+body {
+  background-image: url("/src/assets/bg-pattern.svg"); }
+
 .app-wrapper {
+  background: #fff;
   margin: 2rem .5rem;
   border: solid 1px #dee2e6;
   border-radius: .25rem; }
+  .app-wrapper h1 {
+    padding: 1rem;
+    text-align: center; }
   .app-wrapper .tab-content {
     padding: 2rem; }
+    .app-wrapper .tab-content ol {
+      list-style: none;
+      counter-reset: 're-styled-list-items';
+      margin: 0;
+      padding: 0; }
+      .app-wrapper .tab-content ol li {
+        counter-increment: re-styled-list-items;
+        font-size: 1rem;
+        margin-bottom: 0.5rem; }
+        .app-wrapper .tab-content ol li::before {
+          content: counter(re-styled-list-items) ".";
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin-right: 0.5rem;
+          line-height: 1;
+          color: #23b3d3; }
+    .app-wrapper .tab-content figure img {
+      float: right; }
+    .app-wrapper .tab-content figcaption {
+      clear: both; }
+    .app-wrapper .tab-content .intro-paragraph::first-letter {
+      font-size: 3.6rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: #23b3d3;
+      line-height: .83;
+      padding-top: 4px;
+      padding-right: 3px;
+      padding-left: 3px;
+      display: block;
+      position: relative;
+      float: left; }
+    .app-wrapper .tab-content .resources-wrapper {
+      border: #eee solid 1px;
+      padding: 1rem .5rem;
+      font-size: .75rem; }
+    .app-wrapper .tab-content .article {
+      border-left: #20bf55 solid 3px; }
+    .app-wrapper .tab-content .important {
+      border-left: #d7263d solid 3px; }
 
 .modal-content .modal-header {
   justify-content: center;
