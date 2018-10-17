@@ -66,7 +66,7 @@ $(document).ready(function () {
             }
             const formGroups = document.getElementsByClassName("form-group");
             if (formGroups)
-                $("p#quizScore").text(`You got ${score} out of 5 correct`);
+                $("p#quizScore").text('You got ' + score + ' out of 5 correct');
 
             $('#quizModal').modal('show');
             e.preventDefault();
