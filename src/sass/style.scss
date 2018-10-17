@@ -24,7 +24,7 @@ body {
 
     .tab-content {
         padding: 2rem;
-        width:100%;
+        width: 100%;
 
         ol {
             list-style: none;
@@ -101,6 +101,10 @@ body {
             width: 100%;
             height: 100%;
         }
+    }
+
+    .error {
+        color: $important-col;
     }
 }
 
