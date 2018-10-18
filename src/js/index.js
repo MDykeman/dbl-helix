@@ -42,7 +42,7 @@ $(document).ready(function () {
         errorPlacement: function (error, element) {
             error.appendTo(element.parents(".form-group"));
         },
-        submitHandler: function (e) {
+        submitHandler: function () {
             let score = 0;
             const question1 = $("input[name='fieldRevolution']:checked").val();
             if (question1 == 'Biology') {
@@ -69,7 +69,6 @@ $(document).ready(function () {
                 $("p#quizScore").text('You got ' + score + ' out of 5 correct');
 
             $('#quizModal').modal('show');
-            e.preventDefault();
         }
     });
 });
